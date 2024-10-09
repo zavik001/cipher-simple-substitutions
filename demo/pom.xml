@@ -8,20 +8,19 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <!-- Устанавливаем версию Java 22 -->
         <maven.compiler.source>22</maven.compiler.source>
         <maven.compiler.target>22</maven.compiler.target>
     </properties>
 
     <dependencies>
-        <!-- Библиотека для работы с JSON -->
+        <!-- JSON -->
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20210307</version>
         </dependency>
         
-        <!-- Если нужно работать с HTTP-запросами -->
+        <!-- HTTP -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
@@ -31,7 +30,7 @@
 
     <build>
         <plugins>
-            <!-- Плагин для запуска программы -->
+            <!-- exec -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
